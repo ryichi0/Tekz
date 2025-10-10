@@ -193,6 +193,13 @@ footer{
         
         .footer__nav-links{
           margin-inline-start: 0;
+          
+        }
+      }
+
+      .footer__privacy{
+        .footer__privacy-links{
+          gap: 1em;
         }
       }
     }
