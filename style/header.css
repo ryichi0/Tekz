@@ -1,0 +1,98 @@
+/* HEADER  */
+header{
+  /* position: absolute;
+  inset: 0 0 auto 0; */
+
+  .header__top{
+    border-top: 3px solid var(--primary-color);
+    color: white;
+    display: block;
+
+    .container{
+
+      .container__space-btw{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .cta-info{
+          display: flex;
+          gap: 1.5rem;
+
+          a{
+            margin-right: 10px;
+          }
+        };
+
+        .social-info,
+        .cta-info a{
+          padding: 12px 30px;
+          background-color: var(--primary-color);
+          clip-path: polygon(0% 0%, 100% 0%, 99.13% 7.143%, 99.13% 7.143%, 98.75% 8.125%, 98.4% 9.333%, 98.082% 10.746%, 97.798% 12.344%, 97.551% 14.109%, 97.344% 16.02%, 97.178% 18.057%, 97.057% 20.2%, 96.982% 22.43%, 96.957% 24.726%, 96.957% 76.19%, 96.957% 76.19%, 96.9% 80.052%, 96.735% 83.716%, 96.471% 87.132%, 96.118% 90.252%, 95.683% 93.026%, 95.176% 95.406%, 94.607% 97.342%, 93.983% 98.786%, 93.314% 99.688%, 92.609% 100%, 7.391% 100%, 7.391% 100%, 6.686% 99.688%, 6.017% 98.786%, 5.393% 97.342%, 4.824% 95.406%, 4.317% 93.026%, 3.882% 90.252%, 3.529% 87.132%, 3.265% 83.716%, 3.1% 80.052%, 3.043% 76.19%, 3.043% 24.727%, 3.043% 24.727%, 3.018% 22.43%, 2.943% 20.2%, 2.822% 18.057%, 2.656% 16.02%, 2.449% 14.109%, 2.202% 12.345%, 1.918% 10.746%, 1.6% 9.333%, 1.249% 8.125%, 0.87% 7.143%, 0% 0%);
+        }
+
+        .social-info{
+          padding: 10px 18px;
+        }
+      }
+    }
+  }
+
+  .navigation{
+    padding: 20px 0px;
+    font-weight: 700;
+
+    .container{
+      padding: 0 .4rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      a{
+        color: black;
+
+        &:nth-of-type(6){
+          color: var(--primary-color)
+        }
+      }
+      .nav__main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+
+        }
+      }
+      
+      .nav__action{
+        display: flex;
+        gap: 20px;
+
+        .hamburger-menu{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 50px;
+          height: 50px;
+          border-radius: 100%;
+          cursor: pointer;
+          background-color: #F6F6F6;
+          color: var(--primary-color);
+        }
+      }
+  }
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 720px) {
+  header{
+    .header__top{
+      display: none;
+    }
+    .navigation .container{
+      & .nav__main{
+        display: none;
+      }
+    }
+  }
+}

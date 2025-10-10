@@ -1,0 +1,67 @@
+/* DEFAULT STYLES */
+:root{
+  --primary-color: #683BF2;
+}
+
+
+/* RESET STYLES */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* GENERAL STYLES */
+
+body{
+  position: relative;
+  direction: rtl;
+  color: black;
+  height: 1000px;
+}
+
+h2{
+  font-size: 1.8rem;
+}
+
+h3{
+  font-size: 1.4rem;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.text-purple{
+  color: var(--primary-color)
+}
+
+.container{
+  max-width: 1314px;
+  margin: 0 auto;
+}
+
+.primary-btn{
+  padding: 13px 30px;
+  border-radius: 100px;
+  border: none;
+  color: white;
+  background-color: var(--primary-color);
+  font-weight: 700;
+}
+
+/* SCROLL TO UP BUTTON */
+/* div.up {
+  a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+} */

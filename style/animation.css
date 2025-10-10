@@ -1,0 +1,26 @@
+@keyframes vertical{
+  from{
+    transform: translatey(0)
+  }
+  to{
+    transform: translatey(-50px)
+  }
+}
+
+@keyframes horizontal{
+  from{
+    transform: translatex(0)
+  }
+  to{
+    transform: translatex(-50px)
+  }
+}
+
+@keyframes rotate{
+  from{
+    transform: rotate(0)
+  }
+  to{
+    transform: rotate(180deg)
+  }
+}
