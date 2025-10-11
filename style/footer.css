@@ -39,13 +39,12 @@ footer{
     color: white;
   }
   p{
-    color: #74787C;
+    color: var(--paragraph);
   }
 
   .container{
     display: flex;
     flex-direction: column;
-    padding-inline: 10px;
 
     .footer__table{
       position: relative;
@@ -80,6 +79,7 @@ footer{
       }
 
       .footer__table-contact{
+        position: relative;
         display: flex;
         flex-direction: column;
         gap: 18px;
@@ -96,9 +96,21 @@ footer{
             color: var(--primary-color)
           }
         }
+        &::after{
+          content: '';
+          width: 1px;
+          height: 220px;
+          position: absolute;
+          top: 50%;
+          background-color: #191F38;
+          right: -68px;
+          transform: translateY(-50%);
+          
+        }
       }
 
       .footer__table-social{
+        position: relative;
         p{
           padding-block: 25px;
           max-width: 350px;
@@ -125,6 +137,18 @@ footer{
             }
           }
         }
+      }
+
+      .footer__table-social::after,
+      .footer__table-contact::after{
+        content: '';
+        width: 1px;
+        height: 220px;
+        position: absolute;
+        top: 50%;
+        background-color: #191F38;
+        right: -68px;
+        transform: translateY(-50%);
       }
     }
 

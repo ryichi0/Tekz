@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>|| loading page ||</title>
+  <link rel="stylesheet" href="./style/general.css">
+</head>
+<style>
+  body{
+    align-content: center;
+    justify-items: center;
+    min-height: 100vh;
+  }
+  .loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 34px solid rgba(231, 225, 233, 0.33);
+    border-top: 34px solid var(--primary-color);
+    border-radius: 100px;
+    box-shadow: inset 10px 19px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 10px 19px 20px rgba(0, 0, 0, 0.3);
+    width: 160px;
+    height: 160px;
+    padding: 16px;
+    overflow: hidden;
+    animation: spin 2s linear infinite;
+
+    img{
+      transform: scale(0.5);
+    }
+  }
+
+  @keyframes spin{
+    0% {transform: rotate(0deg) }
+    100% {transform: rotate(360deg) }
+  }
+</style>
+<body>
+  <div class="loader">
+    <img src="./media/logo-black.svg" alt="">
+  </div>
+</body>
+</html>

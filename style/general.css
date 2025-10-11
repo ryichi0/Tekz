@@ -1,6 +1,7 @@
 /* DEFAULT STYLES */
 :root{
   --primary-color: #683BF2;
+  --paragraph: #74787C;
 }
 
 
@@ -40,9 +41,14 @@ a{
 .container{
   max-width: 1314px;
   margin: 0 auto;
+  padding-inline: 10px;
 }
 
 .primary-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
   padding: 13px 30px;
   border-radius: 100px;
   border: none;
