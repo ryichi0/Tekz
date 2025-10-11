@@ -83,3 +83,15 @@
     padding-block-end: 15px;
   } */
 }
+@media screen and (max-width: 480px){
+  .card{
+    flex-direction:column; 
+    .card__img{
+      align-self: start;
+    }
+    
+  }
+  .card__content-content{
+    padding-block-end: 15px;
+  }
+}
