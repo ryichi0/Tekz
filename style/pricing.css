@@ -2,15 +2,8 @@
   padding-block: 115px 90px;
   background-color: var(--primary-color);
 
-  .pricing__header{
-    text-align: center;
-    max-width: 568px;
-    margin-inline: auto;
+  .header{
     color: white;
-    span{
-      margin-block-end: 14px;
-    }
-    
   }
 
   .pricing__content{
@@ -49,12 +42,6 @@
         border-radius: 15px;
 
         .card__inner-icon{
-          align-content: center;
-          text-align: center;
-          width: 93px;
-          height: 93px;
-          border-radius: 100px;
-          background-color: var(--primary-color);
           margin-block-start: -80px;
         }
         .card__inner-price{
