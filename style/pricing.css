@@ -10,18 +10,19 @@
     margin-block-start: 60px;
     display: flex;
     /* flex-wrap: wrap; */
-    align-items: stretch;
+    justify-content: center;
     gap: 32px;
 
     .card{
+      flex: 1 1 auto;
+      /* min-width: 320px; */
+      /* max-width: 360px; */
       position: relative;
       border-radius: 15px;
       margin-block-end: 30px;
       padding: 75px 20px 20px;
       background-color: #F2F3F4;
-      /* flex: 1 1 1; */
-      /* max-width: 100%; */
-      width: 100%;
+      
 
       .card__tag{
         position: absolute;
@@ -107,13 +108,11 @@
 @media screen and (max-width: 700px) {
   .pricing__content{
     flex-direction: column;
-
-
+    
   }
   .card__tag{
     position: static;
     text-align: center;
-    /* inset : 0 0 auto 0; */
     padding: 5px 20px;
   }
 }
