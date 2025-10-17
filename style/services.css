@@ -116,6 +116,8 @@
  
 @media screen and (max-width: 990px) {
   .services{
+    margin: 0;
+    border-radius: 0;
     .circle{
       display: none;
     }
