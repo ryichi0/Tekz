@@ -82,9 +82,10 @@
     .card__img{
       align-self: start;
     }
-    
-  }
-  .card__content-content{
-    padding-block-end: 15px;
+    .card__content{
+      .card__content-description{
+        padding-block-end: 0;
+      }
+    }
   }
 }
