@@ -1,0 +1,144 @@
+.team{
+  background-color: #F2F3F4;
+  padding-block: 120px;
+  overflow: hidden;
+
+  .container{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+
+    .header{
+      text-align: start;
+      max-width: 520px;
+    }
+    .cards{
+      padding: 15px;
+      max-width: 660px;
+      display: flex;
+      gap: 30px;
+      overflow-x: scroll;
+      scroll-behavior: smooth;
+      anchor-name: --carousel;
+      scroll-snap-type: x mandatory ;
+      &::-webkit-scrollbar{
+        display: none;
+      }
+
+      &::scroll-button(right),
+      &::scroll-button(left){
+        content: '→';
+        color: white;
+        background-color:  var(--primary-color);
+        height: 60px;
+        width: 60px;
+        font-size: 3rem;
+        border-radius: 120px;
+        padding-block-end: .1em;
+        border: none;
+        cursor: pointer;
+        position: fixed;
+        position-anchor: --carousel;
+        position-area: right center;
+        translate: -70%;
+      }
+      &::scroll-button(left) {
+        content: '←';
+        position-area: left center;
+        translate: 70%;
+      }
+
+      &::scroll-button(right):disabled,
+      &::scroll-button(left):disabled{
+        opacity:.5;
+        cursor: auto
+      }
+      .card{
+        scroll-snap-align: center;;
+        flex: 0 0 300px;
+        height: 100%;
+        padding: 60px 45px;
+        border-radius: 15px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .card__content{
+          text-align: center;
+          span{
+            color: var(--paragraph);
+          }
+        }
+        .card__img{
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-inline: auto; 
+
+          width: 180px;
+          height: 180px;
+          border-radius: 100%;
+          margin-block-end: 12px;
+          border: 3px solid transparent;
+          background: linear-gradient(#fff, #fff) padding-box, linear-gradient(180deg, rgba(234, 232, 255, 0.29) 31.39%, #673AEE 100%) border-box;
+
+          i{
+            color: white;
+            width: 39px;
+            height: 39px;
+            background-color: var(--primary-color);
+            align-content: center;
+            text-align: center;
+            border-radius: 100px;
+          }
+          .social-icon{
+            display: none;
+          }
+          .item-social{
+            position: absolute;
+            inset: auto auto 7px auto;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .team{
+    .container{
+      flex-wrap: wrap;
+
+      .cards{
+        &::scroll-button(right){
+          translate: -90%;
+        }
+        &::scroll-button(left) {
+          translate: 90%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .team{
+    .container{
+      .header{
+        h2{
+          font-size: 35px;;
+        }
+      }
+      .cards{
+        .card{
+          flex-basis: 100%;
+          
+        }
+      }
+    }
+  }
+}

@@ -35,3 +35,34 @@
     transform: translatey(0);
   }
 }
+
+@keyframes pulseInner{
+  from{
+    transform: scale(1);
+    opacity: 1
+  }
+  to{
+    transform: scale(1.6);
+    opacity: 0
+  }
+}
+@keyframes pulseMiddle{
+  from{
+    transform: scale(1);
+    opacity: 1
+  }
+  to{
+    transform: scale(1.6);
+    opacity: 0
+  }
+}
+@keyframes pulseOuter{
+  from{
+    transform: scale(1);
+    opacity: 1
+  }
+  to{
+    transform: scale(1.6);
+    opacity: 0
+  }
+}
