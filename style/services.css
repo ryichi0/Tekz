@@ -1,10 +1,26 @@
 .services{
-  display: none;
   background-color: #F0EEF5;
   padding-block: 115px 90px;
   overflow: hidden;
-
   position: relative;
+
+  .circle{
+    width: 540px;
+    height: 540px;
+    position: absolute;
+    z-index: 1;
+    background-color: var(--primary-color);
+    border-radius: 100%;
+
+    &.top{
+      top: -360px;
+      left: -360px;
+    }
+    &.bottom{
+      bottom: -360px;
+      right: -360px;
+    }
+  }
   .top-r,
   .bottom-l{
       img{
@@ -30,12 +46,46 @@
       margin-block-start: 60px;
       display: flex;
       justify-content: center;
+      column-gap: 30px;
 
       .card{
+        flex: 0 0 auto;
+        width: 33.3333%;
         margin-bottom: 30px;
         padding: 0px 40px 40px;
         position: relative;
         text-align: center;
+        z-index: 1;
+    
+
+        &:hover .card__img-hover{
+          opacity: 1;
+          visibility: visible;
+        }
+        .card__img-hover,
+        .card__img{
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          z-index: -1;
+          border-radius: 12px;
+          img{
+            width: 100%;
+            max-width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: inherit
+          }
+        }
+        .card__img-hover{
+          opacity: 0;
+          visibility: hidden;
+        }
+        .card__img{
+          margin: 0 auto;
+        }
         .card__icon{
           width: 100px;
           height: 100px;
@@ -45,25 +95,49 @@
           background-color: var(--primary-color);
           align-content: center;
         }
-        .card__content{
-          
-
+        .card__title{
+          font-size: 22px;
+          font-weight: 700;
+          padding-block-end: 12px;
         }
-        .card__img{
-          position: absolute;
-          inset: 0;
-          width: 100%;
-          height: auto;
-          z-index: 0;
-          opacity: 0.5;
-          filter: drop-shadow(0 0 1px rgb(233, 233, 233));
-          img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          }
+        .card__description{
+          padding-block-end: 24px;
+          color: var(--paragraph);
+        }
+        .primary-btn{
+          display: inline
         }
       }
     }
   }
 }
+ 
+@media screen and (max-width: 990px) {
+  .services{
+    .circle{
+      display: none;
+    }
+    .container{
+      .services__card-container{
+        flex-wrap: wrap;
+        .card{
+          flex: 0 0 auto;
+          width: 50%;
+        }
+
+      }
+    }
+  }
+} 
+@media screen and (max-width: 700px) {
+  .services{
+    .container{
+      .services__card-container{
+        .card{
+          width: 100%;
+        }
+
+      }
+    }
+  }
+} 
