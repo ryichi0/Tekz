@@ -23,12 +23,20 @@ body{
   scroll-behavior: smooth;
 }
 
+h1{
+  font-size: 60px;
+}
+
 h2{
   font-size: 44px;
 }
 
 h3{
   font-size: 1.4rem;
+}
+
+p{
+  font-size: 16px;
 }
 
 a{

@@ -1,7 +1,7 @@
 /* HEADER  */
 header{
-  /* position: absolute;
-  inset: 0 0 auto 0; */
+  position: absolute;
+  inset: 0 0 auto 0;
 
   .header__top{
     border-top: 3px solid var(--primary-color);
