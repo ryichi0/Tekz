@@ -20,6 +20,7 @@ body{
   color: black;
   height: 1000px;
   font-family: IRANSans;
+  scroll-behavior: smooth;
 }
 
 h2{
@@ -33,6 +34,7 @@ h3{
 a{
   text-decoration: none;
   color: white;
+  cursor: pointer;
 }
 
 .text-purple{
@@ -93,19 +95,20 @@ a{
   border-radius: 200px;
 }
 /* SCROLL TO UP BUTTON */
-/* div.up {
-  a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 55px;
-    height: 55px;
-    border-radius: 100%;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-  }
-} */
+.up {
+  position: fixed;
+  inset: auto 30px 30px auto;
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+  background-color: var(--primary-color);
+  color: white;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-behavior: smooth;
+}
 
 /* RESPONSIVE */
 @media screen and (max-width: 700px) {
