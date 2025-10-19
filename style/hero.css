@@ -25,11 +25,11 @@
     position: fixed;
     position-anchor: --slider;
     position-area: right center;
-    translate: -180%;
+    translate: -140%;
   }
   &::scroll-button(left) {
     content: '←';
-    translate: 180%;
+    translate: 140%;
     position-area: left center;
   }
 
@@ -62,7 +62,7 @@
       }
     }
     &.slide1{
-      background-image: linear-gradient(to left, rgba(4, 9, 32, 0.97), rgba(5, 9, 26, 0) 70%)
+      background-image: linear-gradient(to left, rgba(4, 9, 32, 0.97), rgba(5, 9, 26, 0) 80%)
       ,url('../media/hero-2_1.jpg')
     }
     &.slide2{
@@ -77,17 +77,34 @@
 }
 
 
-.slide .content {
-  /* background: rgba(0, 0, 0, 0.5); */
-  color: white;
-  padding: 2rem 3rem;
-  border-radius: 10px;
+@media screen and (max-width: 1440px) {
+  .hero-slider{
+    &::scroll-button(right),
+    &::scroll-button(left){
+      position-area: center bottom;
+      transform: translateY(-90px);
+      translate: 70%;
+    }
+    &::scroll-button(left) {
+      translate: -70%;
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .hero-slider{
+    padding-block-start: 95px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero-slider{
+    .slide{
+      .container{
+        h1{
+          font-size: 50px;
+        }
+      }
+    }
+    
+  }
 }
 
-@keyframes slideAnimation {
-  0% { transform: translateX(0%); }
-
-  50% { transform: translateX(-100%); }
-
-  100% { transform: translateX(-200%); }
-}

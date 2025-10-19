@@ -61,9 +61,40 @@
           }
           p{
             max-width: 303px;
-            padding-inline-end: 10px;
+            padding-inline-start: 10px;
             margin-block-end: 1rem;
             color: var(--paragraph);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .feature{
+    margin-block-start: 50px;
+    .container{
+      .flex{
+        .feature__item{
+          padding: 0;
+          .feature__item-shape{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 990px) {
+  .feature{
+    .container{
+      .flex{
+        justify-content: center;
+        flex-wrap: wrap;
+        .feature__item{
+          .feature__item-content{
+            padding: 15px;
           }
         }
       }
