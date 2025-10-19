@@ -17,7 +17,7 @@
     background-color:  white;
     height: 60px;
     width: 60px;
-    font-size: 3rem;
+    font-size: 2rem;
     border-radius: 120px;
     padding-block-end: .1em;
     border: none;
@@ -84,6 +84,10 @@
       position-area: center bottom;
       transform: translateY(-90px);
       translate: 70%;
+      width: 40px;
+      height: 40px;
+      font-size: 1.5rem;
+      padding-block-end: .1em;
     }
     &::scroll-button(left) {
       translate: -70%;
@@ -98,13 +102,24 @@
 @media screen and (max-width: 767px) {
   .hero-slider{
     .slide{
+      padding-block: 120px 160px;
       .container{
         h1{
           font-size: 50px;
         }
       }
     }
-    
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero-slider{
+    .slide{
+      .container{
+        h1{
+          font-size: 40px;
+        }
+      }
+    }
   }
 }
 
