@@ -96,7 +96,7 @@
 }
 @media screen and (max-width: 1200px) {
   .hero-slider{
-    padding-block-start: 95px;
+    padding-block-start: 0;
   }
 }
 @media screen and (max-width: 767px) {
@@ -115,6 +115,7 @@
   .hero-slider{
     .slide{
       background-position: center right;
+      background-image: linear-gradient(to left, rgba(4, 9, 32, 0.97), rgba(4, 9, 32, 1));
       .container{
         h1{
           font-size: 40px;
