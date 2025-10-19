@@ -114,6 +114,7 @@
 @media screen and (max-width: 480px) {
   .hero-slider{
     .slide{
+      background-position: center right;
       .container{
         h1{
           font-size: 40px;
