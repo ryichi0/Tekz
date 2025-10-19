@@ -45,7 +45,11 @@ header{
       display: flex;
       justify-content: space-between;
       align-items: center;
-
+      .nav__logo{
+        img{
+          align-content: center;
+        }
+      }
       a{
         color: black;
         cursor: pointer;
