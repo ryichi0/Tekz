@@ -41,9 +41,6 @@
     left:-30%;
   }
   .container{
-    .header{
-
-    }
     .services__card-container{
       margin-block-start: 60px;
       display: flex;
@@ -98,7 +95,6 @@
           align-content: center;
         }
         .card__title{
-          font-size: 22px;
           font-weight: 700;
           padding-block-end: 12px;
         }

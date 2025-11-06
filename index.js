@@ -15,6 +15,23 @@ closeIcon.addEventListener('click', (event) => {
   mobileMenu.style = 'opacity: 0; visibility: hidden;transform: translatex(150px);'
 })
 
+function scrollAnime () {
+  const sections = document.querySelectorAll('section');
+  let halfScreen = window.innerHeight * .5;
+
+  for(let section of sections) {
+    let secTop = section.getBoundingClientRect().top ;
+    
+    if (secTop < halfScreen) {
+      section.classList.add('slide-up')
+    }
+  }
+}
+window.addEventListener('scroll', scrollAnime)
+
+scrollAnime()
+
+
 
 
 

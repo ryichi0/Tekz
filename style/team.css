@@ -128,15 +128,9 @@
 @media screen and (max-width: 760px) {
   .team{
     .container{
-      .header{
-        h2{
-          font-size: 35px;;
-        }
-      }
       .cards{
         .card{
           flex-basis: 100%;
-          
         }
       }
     }

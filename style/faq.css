@@ -92,18 +92,17 @@
 
   .container{
     /* justify-content: end !important; */
-    
+    display: flex;
+    flex-direction: column;
     .faq__content{
+      margin-inline: auto 0;
       max-width: 715px;
-      justify-self: end;
+      justify-self: flex-end;
 
       .header{
         max-width: 100%;
         color: white;
         text-align: start;
-        h2{
-          font-size: 2rem;;
-        }
       }
       .accordione{
         margin-block-start: 60px;
@@ -113,7 +112,6 @@
           background-color: white;
           border-radius: 10px;
           p{
-            font-size: 16px;
             line-height: 1.625;
             padding: 26px 30px 30px;
           }

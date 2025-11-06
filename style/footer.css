@@ -165,7 +165,7 @@ footer{
       margin-block-end: 40px;
 
       .footer__nav-cta{
-        padding: 13px 30px;
+        /* padding: 13px 30px; */
         background-color: white;
         border-radius: 100px;
         font-weight: 600;

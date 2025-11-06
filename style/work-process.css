@@ -35,7 +35,6 @@
 
       .box__body{
         h3{
-          font-size: 24px;
           font-weight: 700;
           padding-block-end: 13px;
         }
@@ -49,9 +48,6 @@
 }
 
 /* RESPONSIVE */
-@media screen and (max-width: 700px) {
- 
-}
 @media screen and (max-width: 1200px) {
     .box{
       max-width: 50%;

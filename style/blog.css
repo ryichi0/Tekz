@@ -35,7 +35,6 @@
         .card__content-description{
           padding-block-end: 35px;
           font-weight: 700;
-          font-size: 20px;
         }
         .card__content-header{
           display: flex;
@@ -66,12 +65,29 @@
 }
 
 @media screen and (max-width: 700px){
-  .blog__cards{
-    flex-wrap: wrap;
-    .card{
-      width: 100%;
-      align-items: center;
-      padding: 15px;
+  .blog{
+    .blog__cards{
+      flex-wrap: wrap;
+      .card{
+        width: 100%;
+        align-items: center;
+        padding: 15px;
+  
+        .card__content {
+          align-self: start;
+          .card__content-cta{
+            padding: 4px 14px 4px 4px;
+          }
+          .card__content-description{
+            padding-block-end: 26px;
+          }
+          .card__content-header{
+            span{
+              font-size: 14px;
+            }
+          }
+        }
+      }
     }
   }
 }

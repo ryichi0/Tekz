@@ -58,7 +58,6 @@
         margin-inline: 0;
         text-align: start;
         h2{
-          font-size: 44px;;
           margin-block-end: 40px;
         }
       }
@@ -73,11 +72,6 @@
         padding: 80px 60px;
         /* flex-direction: column; */
         flex-wrap: wrap-reverse;
-        .header{
-          h2{
-            font-size: 36px;;
-          }
-        }
       } 
   
     }
